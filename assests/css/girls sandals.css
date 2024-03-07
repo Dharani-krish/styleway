@@ -58,6 +58,14 @@ body{
     font-size: 8px;
     margin-left: 2px;
 }
+.rightCon a{
+    color: #999;
+    text-decoration: none;
+}
+.rightCon a:hover{
+    color: #ebb5ac;
+    transition: 0.3s all;
+}
 .firstNav{
     width: 90%;
     height:90px;
@@ -68,13 +76,11 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
-/* .inNav{
-    width:90%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-} */
+.inDivision a{
+    color: #000000;
+    text-decoration: none;
+}  
+
 .inDivision{
     width: 50%;
     height: 100%;
@@ -120,13 +126,22 @@ body{
     justify-content: space-between;
     background-color: white;
     position: absolute;
-    top:53px;
+    top:92px;
     z-index: 10;
 }
 .dropDown{
+    height: 100%;
     position: relative; 
-    display: flex;   
+    display: flex; 
+    align-items: center;  
 }
+.dropDown p{
+    font-size: 13px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
 
 .dropDown:hover .details{
     display: flex;
@@ -134,7 +149,6 @@ body{
 
 .dropCont{
     width: 92%;
-    /* height: 23%; */
     display: flex;
     align-items: center;
     justify-content:space-between;
@@ -212,8 +226,16 @@ body{
     display: flex;
 }
 .item{
+    height: 100%;
     display: flex;
     position: relative;
+    align-items: center;
+   
+}
+.item p{
+    height: 100%;
+    display: flex;
+    align-items: center;
    
 }
 .item1{
@@ -225,7 +247,7 @@ body{
     justify-content:space-evenly;
     flex-direction: column;
     position:absolute;
-    top:53px;
+    top:90px;
     left: -20px;
     padding-left: 18px;
     border: 1px solid lightgray;
@@ -236,6 +258,10 @@ body{
     letter-spacing: 0.5px;
     line-height:5px;
 }
+.item1 a{
+    text-decoration: none;
+}
+
 
 
  .num{
@@ -257,22 +283,13 @@ body{
  .menu{
     display: none;
  }
- /* body
-{
-  margin: 0;
-  padding: 0;
-  
-  background: #232323;
-  color: #cdcdcd;
-  font-family: "Avenir Next", "Avenir", sans-serif;
-} */
 
- .bgNav{
+.bgNav{
     width: 100%;
     background-color: #f5f5f5;
     height: 70px;
  }
-.secondNav{
+ .secondNav{
     width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -282,79 +299,71 @@ body{
     justify-content: flex-start;
 } 
 .secondNav  p{
-    margin-left: 10px;
+    padding-left: 10px;
     font-size: 13px;
-    font-weight: 400;
+    font-weight: 400; 
+    border-left: 1px solid #000000;
+
+    
+    
 }
+
 .secondNav a{
     color: #000000;
     font-weight: 400;
-    width: 50px;
-    height: 18%;
+    width: 100px;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     font-size: 13px;
-    border-right: 1px solid #000000;
-}
-.fullImg{
-    width: 90%;
-    height: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 35px;
-}
-.fullImg img{
-    width: 100%;
-    background-position: 100%;
-    background-image: cover;
-}
-.topic{
-    width: 90%;
-    height: 70px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    border-bottom: 1px solid #ededed;
-}
-.topic h1{
-    font-size: 20px;
-    font-weight: 600;
-    color: #000000;
-}
-.para{
-    width: 90%;
-    height: 85px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    text-decoration: none;
+    margin-right: -55px;
+   
    
 }
-.para p{
-  font-size: 14px;
-  color: #999;
-  line-height: 22px;
-  letter-spacing: 0.8px;
-
+.secondNav a:hover{
+    color: #ebb5ac;
 }
 
+
+.header{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 44px;
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 40px;
+
+}
+.header h2{
+    font-size: 19px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+   
+}
+.bot{
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid lightgray;
+}
 
 .topic1{
     width: 90%;
-    height: 80px;
+    height: 60px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    margin-top: 40px;
 }
 .topic1 h1{
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 17px;
+    font-weight: 500;
     color: #000000;
 } 
 .drops{
@@ -411,7 +420,7 @@ body{
 }
 .innerCont{
     width: 90%;
-    height: 75px;
+    height: 85px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -426,17 +435,14 @@ body{
     justify-content: space-between;
 }
 .leftCont{
-    width:50px;
-    height: 22px;
+    width:20px;
+    height: 24px;
     display: flex;
     align-items: center;
     justify-content:space-between;
+    background-image: url("https://demo.codezeel.com/prestashop/PRS15/PRS150372/PRS01/themes/Styleway/assets/img/codezeel/category-sprite.png");
 }
-.leftCont i{
-    font-size: 22px;
-   
-}
-.leftCont1{
+    .leftCont1{
     width:162px;
     height: 22px;
     display: flex;
@@ -448,15 +454,14 @@ body{
    
 }
 .rightCont{
-    width:43%;
+    width:48%;
     height:40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-right: 4px;
 }
 .rightCont p{
-    width: 79%;
+    width: 82%;
     height: 20%;
     display: flex;
     align-items: center;
@@ -547,11 +552,6 @@ body{
     display:block;
     transition: 0.3s all;
 }
-/* .hoverImg .firstImg:hover .secondImg{
-    display: flex;
-    transform:translate(90px);
- } */
-
 .onSale{
     position: relative;   
 }
@@ -630,11 +630,6 @@ body{
 .pos-1 i:hover{
     background-color: #ebb5ac;
 }
-
-
-
-
-
 .baseCont span input[type="button"]{
     width:262px;
     height: 45px;
@@ -650,19 +645,17 @@ body{
     color: white;
     transition: 0.3s all;
 }
-
 .middle{
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    height: 40px;
+    height: 30px;
     display: flex;
     align-items: center;
     justify-content:space-between;
-    margin-bottom: 50px;
 }
 .mid{
-    width: 18%;
+    width: 22%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -702,9 +695,10 @@ body{
 }
 .mid1 h6:hover{
     background-color: #ebb5ac;
-    color: #000000;
-
+    color: black;
+    transition: 0.3s all;
 }
+
 .footer {
     width: 100%;
     height: 340px; 
@@ -740,7 +734,6 @@ body{
   
   .sideIcon-1 {
     width: 100%;
-    /* height: 50px; */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -752,17 +745,8 @@ body{
     font-size: 13px;
     letter-spacing: 1px;
     line-height: 25px;
-  
-    /* display: flex;
-    
-      align-items: center;
-      justify-content:flex-start; */
   }
   .sideIcon-1 i {
-    /* display: flex;
-     
-      align-items: flex-start;
-      justify-content: space-between; */
     padding-right: 12px;
     color: #ebb5ac;
     font-size: 15px;
@@ -909,7 +893,8 @@ body{
     color: #ebb5ac;
     transition: 0.3s all;
   }
-  .fixed{
+
+.fixed{
     width: 100%;
     height: 54px;
     background-color: #222222;
@@ -924,7 +909,7 @@ body{
     color: white;
     letter-spacing: 1.2px;
 }
-.fixed button{
+button{
     width: 81px;
     height: 31px;
     border-radius: 3px;
@@ -935,7 +920,6 @@ body{
     background-color: white;
 
 }
-
 @media(max-width:1200px){
 
 }
@@ -949,32 +933,30 @@ body{
     .imgIcons{
         display: none;
     }
-    /* .imgCont {
-        height: 170px;
-    } */
+
 .menu{
     display: block;
 }
-
-.fullImg{
-    margin-top: 20px;
-}
-.para p{
-    line-height: 17px;
-}
-.inVariety img{
-    width: 28%;
-    height: 65%;
-}
-.downVariety{
-    width: 77%;
-    height: 50px;
-    margin-top: 10px;
+.variety{
+    width: 100%;
    
+    flex-direction: column;
+    margin-left: 0px;
+}
+.innerVariety{
+    width: 75%;
+    height: 215px;
+}
+.innerVariety img{
+    width: 250px; 
+}
+.centerImg{
+    height: 100%;
 }
 .topic1{
     width: 88%;
     height: 65px;
+    margin-top: 0px;
 }
 
 .inDrops{
@@ -1007,7 +989,6 @@ body{
     width: 80%;
     justify-content: flex-end;
 }
-
 .rightCont{
     width: 97%;
     justify-content: flex-start;
@@ -1016,6 +997,8 @@ body{
 .rightCont p{
     width: 76%;
 }
+
+
 .totGrid{
     margin-top: 28px;
     width: 100%;
@@ -1024,11 +1007,6 @@ body{
     width: 70%;
     grid-template-columns: repeat(1,1fr);
 }
-
-.hoverImg img {
-    width: 100%;
-    height: 336px;
-}
 .mid{
     width: 50%;
 }
@@ -1036,10 +1014,12 @@ body{
     width: 35%;
     margin-right: 0px;
 }
+
 .middle{
     height: 100%;
     margin-bottom: 15px;
 }
+
 .footer{
     height: 100%;
     margin-top: 0px;
@@ -1100,7 +1080,8 @@ body{
 }
 .newSection-1 button{
     margin-top: 10px;
-
+    margin-left: -3px;
+    border-radius: 0px;
 }
 .footer-Icon{
     width: 100%;

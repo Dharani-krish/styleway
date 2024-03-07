@@ -58,6 +58,14 @@ body{
     font-size: 8px;
     margin-left: 2px;
 }
+.rightCon a{
+    color: #999;
+    text-decoration: none;
+}
+.rightCon a:hover{
+    color: #ebb5ac;
+    transition: 0.3s all;
+}
 .firstNav{
     width: 90%;
     height:90px;
@@ -68,13 +76,12 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
-/* .inNav{
-    width:90%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-} */
+.inDivision a{
+    color: #000000;
+    text-decoration: none;
+}
+
+
 .inDivision{
     width: 50%;
     height: 100%;
@@ -120,12 +127,19 @@ body{
     justify-content: space-between;
     background-color: white;
     position: absolute;
-    top:53px;
+    top:92px;
     z-index: 10;
 }
 .dropDown{
+    height: 100%;
     position: relative; 
-    display: flex;   
+    display: flex;  
+    align-items: center; 
+}
+.dropDown p{
+    height: 100%;
+    display: flex; 
+    align-items: center;  
 }
 
 .dropDown:hover .details{
@@ -134,7 +148,6 @@ body{
 
 .dropCont{
     width: 92%;
-    /* height: 23%; */
     display: flex;
     align-items: center;
     justify-content:space-between;
@@ -212,8 +225,16 @@ body{
     display: flex;
 }
 .item{
+    height: 100%;
     display: flex;
     position: relative;
+    align-items: center;
+   
+}
+.item p{
+    height: 100%;
+    display: flex;
+    align-items: center;
    
 }
 .item1{
@@ -225,7 +246,7 @@ body{
     justify-content:space-evenly;
     flex-direction: column;
     position:absolute;
-    top:53px;
+    top:90px;
     left: -20px;
     padding-left: 18px;
     border: 1px solid lightgray;
@@ -236,7 +257,9 @@ body{
     letter-spacing: 0.5px;
     line-height:5px;
 }
-
+.item1 a{
+    text-decoration: none;
+}
 
  .num{
      position: relative;
@@ -257,22 +280,13 @@ body{
  .menu{
     display: none;
  }
- /* body
-{
-  margin: 0;
-  padding: 0;
-  
-  background: #232323;
-  color: #cdcdcd;
-  font-family: "Avenir Next", "Avenir", sans-serif;
-} */
-
+ 
  .bgNav{
     width: 100%;
     background-color: #f5f5f5;
     height: 70px;
  }
-.secondNav{
+ .secondNav{
     width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -282,21 +296,33 @@ body{
     justify-content: flex-start;
 } 
 .secondNav  p{
-    margin-left: 10px;
+    padding-left: 10px;
     font-size: 13px;
-    font-weight: 400;
+    font-weight: 400; 
+    border-left: 1px solid #000000;
+
+    
+    
 }
+
 .secondNav a{
     color: #000000;
     font-weight: 400;
-    width: 50px;
-    height: 18%;
+    width: 100px;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     font-size: 13px;
-    border-right: 1px solid #000000;
+    text-decoration: none;
+    margin-right: -55px;
+   
+   
 }
+.secondNav a:hover{
+    color: #ebb5ac;
+}
+
 .fullImg{
     width: 90%;
     height: 100%;

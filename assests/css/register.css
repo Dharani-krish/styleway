@@ -27,6 +27,10 @@ body{
 .menu{
     display: none;
 }
+.inDivision a{
+    color: #000000;
+    text-decoration: none;
+} 
 .inDivision{
     width: 50%;
     height: 100%;
@@ -72,27 +76,38 @@ body{
     justify-content: space-between;
     background-color: white;
     position: absolute;
-    top:53px;
+    top:92px;
     z-index: 10;
 }
 .dropDown{
+    height: 100%;
     position: relative; 
-    display: flex;   
+    display: flex; 
+    align-items: center;  
 }
-
+.dropDown p{
+    font-size: 13px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
 .dropDown:hover .details{
     display: flex;
 }
 
 .dropCont{
     width: 92%;
-    /* height: 23%; */
     display: flex;
     align-items: center;
     justify-content:space-between;
-    
-  
-
+}
+.rightCon i{
+    font-size: 8px;
+    margin-left: 2px;
+}
+.rightCon a{
+    color: #999;
+    text-decoration: none;
 }
 .drop{
     width: 38%;
@@ -177,7 +192,7 @@ body{
     justify-content:space-evenly;
     flex-direction: column;
     position:absolute;
-    top:53px;
+    top:90px;
     left: -20px;
     padding-left: 18px;
     border: 1px solid lightgray;
@@ -187,6 +202,19 @@ body{
     color:#777777;
     letter-spacing: 0.5px;
     line-height:5px;
+}
+.item{
+    height: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+   
+}
+.item p{
+    height: 100%;
+    display: flex;
+    align-items: center;
+   
 }
  .num{
      position: relative;
@@ -714,6 +742,7 @@ button{
     .checks{
         width: 83%;
     }
+   
     .footer{
         height: 100%;
         margin-top: 0px;

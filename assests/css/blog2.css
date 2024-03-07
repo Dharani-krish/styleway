@@ -58,6 +58,14 @@ body{
     font-size: 8px;
     margin-left: 2px;
 }
+.rightCon a{
+    color: #999;
+    text-decoration: none;
+}
+.rightCon a:hover{
+    color: #ebb5ac;
+    transition: 0.3s all;
+}
 .firstNav{
     width: 90%;
     height:90px;
@@ -71,13 +79,11 @@ body{
 .menu{
     display: none;
 }
-/* .inNav{
-    width:90%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-} */
+.inDivision a{
+    color: #000000;
+    text-decoration: none;
+}  
+
 .inDivision{
     width: 50%;
     height: 100%;
@@ -123,27 +129,31 @@ body{
     justify-content: space-between;
     background-color: white;
     position: absolute;
-    top:53px;
+    top:92px;
     z-index: 10;
 }
 .dropDown{
+    height: 100%;
     position: relative; 
-    display: flex;   
+    display: flex; 
+    align-items: center;  
 }
-
+.dropDown p{
+    font-size: 13px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
 .dropDown:hover .details{
     display: flex;
 }
 
 .dropCont{
     width: 92%;
-    /* height: 23%; */
     display: flex;
     align-items: center;
     justify-content:space-between;
     
-  
-
 }
 .drop{
     width: 38%;
@@ -215,8 +225,16 @@ body{
     display: flex;
 }
 .item{
+    height: 100%;
     display: flex;
     position: relative;
+    align-items: center;
+   
+}
+.item p{
+    height: 100%;
+    display: flex;
+    align-items: center;
    
 }
 .item1{
@@ -228,7 +246,7 @@ body{
     justify-content:space-evenly;
     flex-direction: column;
     position:absolute;
-    top:53px;
+    top:90px;
     left: -20px;
     padding-left: 18px;
     border: 1px solid lightgray;
@@ -238,6 +256,9 @@ body{
     color:#777777;
     letter-spacing: 0.5px;
     line-height:5px;
+}
+.item1 a{
+    text-decoration: none;
 }
  .num{
      position: relative;
@@ -284,6 +305,13 @@ body{
     border-bottom: 1px solid #ebb5ac;
     color: #ebb5ac;
 }
+.secondNav a{
+    text-decoration: none;
+}
+.secondNav a:hover{
+    color: #ebb5ac;
+}
+
 .wholeCont{
     width: 100%;
     height: 100%;
@@ -683,6 +711,9 @@ body{
     font-size: 14px;
     color: #888888;
     letter-spacing: 0.3px;
+}
+.mid1 a{
+    text-decoration: none;
 }
 .mid1{
     width: 19%;

@@ -58,6 +58,15 @@ body{
     font-size: 8px;
     margin-left: 2px;
 }
+.rightCon a{
+    color: #999;
+    text-decoration: none;
+}
+.rightCon a:hover{
+    color: #ebb5ac;
+    transition: 0.3s all;
+}
+
 .firstNav{
     width: 90%;
     height:90px;
@@ -68,7 +77,12 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
-.inDivision1{
+.inDivision a{
+    color: #000000;
+    text-decoration: none;
+}
+
+.inDivision{
     width: 50%;
     height: 100%;
     display: flex;
@@ -112,7 +126,7 @@ body{
     justify-content: space-between;
     background-color: white;
     position: absolute;
-    top:90px;
+    top:92px;
     z-index: 10;
 }
 .dropDown{
@@ -134,7 +148,6 @@ body{
 
 .dropCont{
     width: 92%;
-    /* height: 23%; */
     display: flex;
     align-items: center;
     justify-content:space-between;
@@ -212,8 +225,16 @@ body{
     display: flex;
 }
 .item{
+    height: 100%;
     display: flex;
     position: relative;
+    align-items: center;
+   
+}
+.item p{
+    height: 100%;
+    display: flex;
+    align-items: center;
    
 }
 .item1{
@@ -225,7 +246,7 @@ body{
     justify-content:space-evenly;
     flex-direction: column;
     position:absolute;
-    top:53px;
+    top:90px;
     left: -20px;
     padding-left: 18px;
     border: 1px solid lightgray;
@@ -235,6 +256,9 @@ body{
     color:#777777;
     letter-spacing: 0.5px;
     line-height:5px;
+}
+.item1 a{
+    text-decoration: none;
 }
 
 
@@ -264,7 +288,7 @@ body{
     background-color: #f5f5f5;
     height: 70px;
  }
-.secondNav{
+ .secondNav{
     width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -274,37 +298,44 @@ body{
     justify-content: flex-start;
 } 
 .secondNav  p{
-    width: 65px;
-    height: 18%;
+    width:100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin-left: 10px;
     font-size: 13px;
     font-weight: 400;
-    border-right: 1px solid #000000;
-    letter-spacing: 0.3px;
+     letter-spacing: 0.3px;
 }
 .secondNav a{
     color: #000000;
     font-weight: 400;
-    width: 50px;
-    height: 18%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     font-size: 13px;
-    border-right: 1px solid #000000;
     text-decoration: none;
     letter-spacing: 0.3px;
+}
+.secondNav a:hover{
+    color: #ebb5ac;
 }
 .secondNav h6{
     color: #000000;
     font-weight: 400;
     font-size: 13px;
-    letter-spacing: 0.3px;
+    letter-spacing: 0.3px; 
+    padding-left: 10px;
+    border-left: 1px solid #000000;
     margin-left: 10px;
 }
+
+.secondNav h6:hover{
+    color: #ebb5ac;
+}
+
+
 .whole{
         width: 100%;
         height: 100%;
@@ -359,6 +390,24 @@ body{
 .inImg img{
     width: 444px;
     height: 570px;
+ 
+}
+.arrows i{
+    width:43px;
+    height: 40px;
+    position: absolute;
+    top: 520px;
+    right: 27px;
+    background-color: #ebb5ac;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.arrows{
+    position: relative;
 }
 .rightItem{
     width:50%;
@@ -565,7 +614,7 @@ body{
 }
 
 
-.inDivision{
+.inDiv{
     width: 100%;
     height: 60px;
     display: flex;
@@ -741,10 +790,28 @@ body{
     text-align: center;
     border:1px solid #ce1f21;
     padding: 10px;
-    /* color:white;
-    border-radius: 20px #ce1f21; */
+    color:#ce1f21;
     font-size: 17px;
 }
+.i11:hover{
+    background-color:#435F9F;
+    color: white;
+}
+.i12:hover{
+    
+    background-color:#00aaf0;
+    color: white;
+}
+.i13:hover{
+    background-color:#e04b34;
+    color: white;
+}
+.i14:hover{
+    background-color: #ce1f21;
+    color: white;
+}
+
+
 .policies{
     width: 99%;
     height: 50px;
@@ -1333,7 +1400,7 @@ body{
 .topNav{
     display: none;
 }
-.inDivision1{
+.inDivision{
     display: none;
 }
 .imgIcons{
@@ -1395,6 +1462,12 @@ body{
 .leftCart{
     width: 100%;
     justify-content: flex-start;
+}
+.reviews{
+    height: 60px;
+}
+.likes{
+    margin-top: 40px;
 }
 .proAvail{
     width: 100%;

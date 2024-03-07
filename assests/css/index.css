@@ -231,7 +231,7 @@ body{
     align-items: center;
    
 }
-.item{
+.item p{
     height: 100%;
     display: flex;
     align-items: center;
@@ -257,6 +257,9 @@ body{
     color:#777777;
     letter-spacing: 0.5px;
     line-height:5px;
+}
+.item1 a{
+    text-decoration: none;
 }
 .num{
     position: relative;

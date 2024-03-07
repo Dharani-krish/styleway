@@ -58,6 +58,14 @@ body{
     font-size: 8px;
     margin-left: 2px;
 }
+.rightCon a{
+    color: #999;
+    text-decoration: none;
+}
+.rightCon a:hover{
+    color: #ebb5ac;
+    transition: 0.3s all;
+}
 .firstNav{
     width: 90%;
     height:90px;
@@ -68,6 +76,11 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
+.inDivision a{
+    color: #000000;
+    text-decoration: none;
+}
+
 
 .inDivision{
     width: 50%;
@@ -114,12 +127,19 @@ body{
     justify-content: space-between;
     background-color: white;
     position: absolute;
-    top:53px;
+    top:90px;
     z-index: 10;
 }
 .dropDown{
+    height: 100%;
     position: relative; 
-    display: flex;   
+    display: flex;  
+    align-items: center; 
+}
+.dropDown p{
+    height: 100%;
+    display: flex; 
+    align-items: center;  
 }
 
 .dropDown:hover .details{
@@ -128,7 +148,6 @@ body{
 
 .dropCont{
     width: 92%;
-    /* height: 23%; */
     display: flex;
     align-items: center;
     justify-content:space-between;
@@ -206,8 +225,16 @@ body{
     display: flex;
 }
 .item{
+    height: 100%;
     display: flex;
     position: relative;
+    align-items: center;
+   
+}
+.item p{
+    height: 100%;
+    display: flex;
+    align-items: center;
    
 }
 .item1{
@@ -219,7 +246,7 @@ body{
     justify-content:space-evenly;
     flex-direction: column;
     position:absolute;
-    top:53px;
+    top:90px;
     left: -20px;
     padding-left: 18px;
     border: 1px solid lightgray;
@@ -229,7 +256,12 @@ body{
     color:#777777;
     letter-spacing: 0.5px;
     line-height:5px;
+
 }
+.secondNav a{
+    text-decoration: none;
+}
+
 
 
  .num{
@@ -276,10 +308,15 @@ body{
     justify-content: flex-start;
 } 
 .secondNav  p{
-    margin-left: 10px;
+    padding-left: 10px;
     font-size: 13px;
-    font-weight: 400;
+    font-weight: 400; 
+    border-left: 1px solid #000000;
+
+    
+    
 }
+
 .secondNav a{
     color: #000000;
     font-weight: 400;
@@ -289,7 +326,10 @@ body{
     align-items: center;
     justify-content: flex-start;
     font-size: 13px;
-    border-right: 1px solid #000000;
+   
+}
+.secondNav a:hover{
+    color: #ebb5ac;
 }
 .fullImg{
     width: 90%;
